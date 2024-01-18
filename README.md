@@ -2,7 +2,7 @@
 
 This project aims to develop and toxicity detection model for online systems. We have trained and tested 5 models: Logistic Regression, Random Forest, Decision Trees, XGBoost, and Fine-tuned Distill-BERT.
 
-## Table of Contents
+# Table of Contents
 
 - [Installation](#installation)
 - [Usage](#usage)
@@ -17,23 +17,23 @@ Step 2: Run the command "pip install -r requirements.txt"
 
 ## Usage
 
-# Getting the Dataset
+### Getting the Dataset
 
 Step 1: Open the file "get_comments.py", and set subreddits of your choice in the 'subreddit_names' list. Also set the csv file name in which you want the comments to be added.
 Step 2: Now hit run and the comments will be collected automatically in the csv file.
 
-# Classifying the Comments
+### Classifying the Comments
 
 Step 1: Arrange all the csv files in a directory, and specify the path of the directory in "classify_comments.py".
 Step 2: Now hit run and all the csv files will be automatically labelled and collected in an "output_subreddit" directory.
 
 Note: Make sure to replace all the API Key values by your own API Key.
 
-# Concatenation
+### Concatenation
 
 Step 1: You can concat all the files in the directory into one csv file by giving path to "output_subreddit" in "concat.py".
 
-# Finally creating our own model
+### Finally creating our own model
 
 Open up "create_models.ipynb" in Google Collab and changing runtime type to GPU. Now specify the paths to your 'total_comments_labelled.csv' file, and run the model
 
