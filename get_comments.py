@@ -4,9 +4,9 @@ from datetime import datetime
 from praw.models import MoreComments
 
 # Reddit API credentials
-reddit = praw.Reddit(client_id="gw5cab9dcsXMnRI5MNfTrw",
-                     client_secret="P0ixQbX06ow2AQqH6yTRSxMw9KjlfQ",
-                     user_agent="praw_scraper_2.0")
+reddit = praw.Reddit(client_id="your_client_id_for_praw_project",
+                     client_secret="your_client_secret_for_praw_project",
+                     user_agent="your_user_agent_for_praw_project")
 
 def comment_generator(subreddit, num_comments):
     comments = subreddit.comments(limit=num_comments)

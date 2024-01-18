@@ -12,7 +12,7 @@ logging.basicConfig(filename='error_log_lgbt.txt', level=logging.ERROR, format='
 api_endpoint = "https://commentanalyzer.googleapis.com/v1alpha1/comments:analyze"
 
 # Google Perspective API key
-api_key = "AIzaSyBOXtUn3gzBlz_s9HeZJZPIC9Kg8sLgJZw"  # Replace with your actual API key
+api_key = "your_api_key_for_perspective_api"  # Replace with your actual API key
 
 async def analyze_comment(session, comment_text):
     params = {"key": api_key}
