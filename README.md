@@ -43,6 +43,9 @@ Note: At the bottom we have tested the models using new dataset too. You can ext
 
 Once the process is done, you can specify the saved model's path on "app.py", and run "streamlit run app.py" on the terminal. Voila, your app is ready!
 
+### Image of the app
+![image](https://github.com/UjjawalGusain/toxic-content-classification-from-scratch/assets/130745509/92e1a70c-a0ad-437a-b78a-e87e0f4d4d2c)
+
 ## Configuration
 
 The modules used in "create_models.ipynb" might not be installed in your system. Make sure to install them using "!pip install [module_name]" in your notebook.
