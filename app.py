@@ -11,9 +11,9 @@ loaded_model = DistilBertForSequenceClassification.from_pretrained(model_path)
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 loaded_model.to(device)
 
-client_id = 'your_client_id'
-client_secret = 'your_client_secret'
-user_agent = 'your_user_agent'
+client_id = 'qTaRShbBNN4ULvpkajVFsA'
+client_secret = 'ntERZmdVdabqGKC1_o2qW4Zg4TRMEg'
+user_agent = 'praw_scraper_2.2'
 
 reddit = praw.Reddit(client_id=client_id,
                     client_secret=client_secret,
@@ -53,8 +53,8 @@ if st.button('Predict Toxicity'):
     predicted_labels = []
     toxic_probabilities = []
 
-    for i in range(0, len(comments), 8):  # Batch size of 50
-        batch_comments = comments[i:i+8]
+    for i in range(0, len(comments), 50):  # Batch size of 50
+        batch_comments = comments[i:i+50]
         tokenized_inputs = tokenizer(batch_comments, truncation=True, padding=True, max_length=128, return_tensors='pt')
         input_ids = tokenized_inputs['input_ids'].to(device)
         attention_mask = tokenized_inputs['attention_mask'].to(device)
