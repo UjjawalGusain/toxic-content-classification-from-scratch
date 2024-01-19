@@ -1,1 +1,4 @@
 venv/
+secret_keys.txt
+bert-fine-tuned1-20240119T065036Z-001/
+tokenizer_directory-20240119T065027Z-001/
