@@ -35,9 +35,13 @@ Step 1: You can concat all the files in the directory into one csv file by givin
 
 ### Finally creating our own model
 
-Open up "create_models.ipynb" in Google Collab and changing runtime type to GPU. Now specify the paths to your 'total_comments_labelled.csv' file, and run the model
+Open up "create_models.ipynb" in Google Collab and changing runtime type to GPU. Now specify the paths to your 'total_comments_labelled.csv' file, and run the model. You can save the model.
 
 Note: At the bottom we have tested the models using new dataset too. You can extract new comments and test them using the same process.
+
+### Making streamlit app 
+
+Once the process is done, you can specify the saved model's path on "app.py", and run "streamlit run app.py" on the terminal. Voila, your app is ready!
 
 ## Configuration
 
