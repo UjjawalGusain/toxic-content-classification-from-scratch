@@ -11,9 +11,9 @@ loaded_model = DistilBertForSequenceClassification.from_pretrained(model_path)
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 loaded_model.to(device)
 
-client_id = 'qTaRShbBNN4ULvpkajVFsA'
-client_secret = 'ntERZmdVdabqGKC1_o2qW4Zg4TRMEg'
-user_agent = 'praw_scraper_2.2'
+client_id = 'your_client_id'
+client_secret = 'your_client_secret'
+user_agent = 'your_user_agent'
 
 reddit = praw.Reddit(client_id=client_id,
                     client_secret=client_secret,
